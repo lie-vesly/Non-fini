@@ -1,0 +1,176 @@
+/*Reset: Enlever les configurations par defaut des navigateurs*/
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+.img1{
+    border-radius: 1100px;
+    width: 350px;
+    margin: 75px -60px;
+}
+
+p{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    margin: 50% 2%;
+    left: 33%;
+    top: 30%;
+    width: 425px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.473);
+    font-size: medium;
+    font-weight: bold;
+    padding: 50px 3px;
+}
+
+span{
+    color: blue;
+}
+
+.img2{
+    position: absolute;
+    border-radius: 500px;
+    margin: 3px 100px;
+}
+
+h1{
+    color:white;
+    background-color: #ed3c57;
+    height: 10vh;
+    text-align: center;
+    
+}
+
+.button{
+    margin: -75px 20px;
+    outline: none;
+border: none;
+padding: 5px 10px;
+border: 2px solid chocolate;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 600px;
+transition: all .7s ease;
+}
+
+
+
+.bg{
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    background-size: cover;
+}
+
+
+
+p{
+    margin-top: 50px;
+}
+
+
+.navbar{
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.navbar a{
+    color: white;
+}
+
+.navbar .logo{
+    font: 2em;
+    font-weight: bold;
+}
+
+.navbar .nav-links ul{
+    display: flex;
+}
+
+.navbar .nav-links ul li{
+    margin: 0 25px;
+
+}
+
+.navbar .nav-links ul li.active a{
+    color: #ed3c57;
+    font-weight: 600;
+    
+}
+
+.navbar .menu-hamburger{
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 50px ;
+    width: 35px;
+}
+
+
+
+@media screen and (max-width: 900px) {
+    
+    .navbar{
+        padding: 0;
+    }
+    .navbar .menu-hamburger {
+        display: block;
+    }
+    .nav-links {
+        top: 0;
+        left: 0;
+        position: absolute;
+        display: flex;
+        background-color: rgba(182, 155, 155, 0.137);
+        backdrop-filter: blur(2px) ;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links.mobile-menu{
+        margin-left: 0;
+    }
+
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.navbar .nav-links ul li{
+    margin: 25px 0;
+    font-size: 1.2em;
+}
+
+.navbar .logo{
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}

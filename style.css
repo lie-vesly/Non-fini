@@ -1,0 +1,128 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+align-items: center;
+justify-content: center;
+min-height: 100vh;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-image: url(bg.jpg);
+}
+
+.img1{
+    height: 100vh;
+    font-size: small;
+    margin: -20px 5px;
+}
+
+.mot{
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+header{
+    width: 50vw;
+    background-size: cover;
+}
+
+form{
+padding: 15px;
+border-radius: 10px;
+background-color: rgba(255, 228, 196, 0.445);
+backdrop-filter: blur(4px);
+border-top: solid 5px chocolate;
+border-bottom: 5px solid chocolate;
+
+}
+
+::placeholder{
+    color: rgb(255, 255, 255)
+}
+
+form .text{
+color: chocolate;
+font-weight: 700px;
+
+}
+
+form .section{
+padding-bottom: 20px;
+}
+
+.section label{
+font-size: 18px;
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+.section1{
+    margin-left: 5%;
+}
+
+input{
+width: 100%;
+padding: 8px;
+margin-bottom: 15px;
+border: none;
+outline: none;
+border-bottom: black 2px solid;
+background-color: transparent;
+background-clip: blur(15px);
+}
+
+input:focus{
+    border-bottom: 2px solid chocolate;
+}
+
+button{
+outline: none;
+border: none;
+padding: 5px 10px;
+border: 2px solid chocolate;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 600px;
+transition: all .7s ease;
+}
+
+button:hover{
+letter-spacing: 1.5px;
+color: chocolate;
+border: 2px black solid;
+box-shadow: 0 0 10px chocolate;
+}
+
+select{
+outline: none;
+border: none;
+padding: 5px 10px;
+border: 2px solid chocolate;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 600px;
+transition: all .7s ease;
+}
+
+select:hover{
+letter-spacing: 1.5px;
+color: chocolate;
+border: 2px black solid;
+box-shadow: 0 0 10px chocolate;
+}
+
+textarea{
+outline: none;
+border: none;
+padding: 5px 10px;
+border: 2px solid chocolate;
+border-radius: 10px;
+font-size: 15px;
+font-weight: 600px;
+transition: all .7s ease;
+}
+

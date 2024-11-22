@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MC LaMOMO</title>
+</head>
+<body>
+  <form action="">
+    <div class="select">
+        <center><img src="MO.png" alt="300"></center>
+        <h2><center>Remplissez les informations ci-dessous <br>pour passer votre commande</center></h2><br><br>
+    </div>  
+    <span><h3><marquee behavior="" direction="left">Simpliez-vous la vie avec les services de MC-LaMomo</marquee></h3></span>
+   
+
+    <div class="section">
+        <div class="section">
+                <label for="nom">Nom</label>
+                <input type="nom" id="nom" placeholder="Entrez votre nom" required>
+       
+                <label for="prénom">Prénom</label>
+                <input type="prénom" id="prénom" placeholder="Entrez votre prénom" required>
+       
+                <label for="sexe">Sexe :
+                <select name="sexe" id="sexe">
+                    <option value="Masculin">Masculin</option>
+                    <option value="Feminin">Feminin</option>
+                </select></label>
+        
+                <label for="adresse">Adresse</label>
+                <input type="adresse" id="adresse" placeholder="Entrez votre Adresse" required>
+                
+                <label for="téléphone">Téléphone</label>
+                <input type="tel" id="téléphone" placeholder="Entrez votre téléphone" required>
+            
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Entrez votre email">
+
+            </fieldset>
+            </div>
+
+        <fieldset><legend><marquee behavior="" direction="left"><label for="text"><center>Informations liées à votre article</center></label></marquee></legend>
+        <div class="section1">
+                <label for="sexe1" >Types de produits :
+                <select name="sexe1" id="sexe1">
+                    <option value="Bracelet">Bracelet</option>
+                    <option value="Lanière">Lanière</option>
+                    <option value="Collier">Collier</option>
+                </select></label>
+        
+                <label for="couleur1">Couleur de boule 1:
+                <select name="couleur1" id="1">
+                    <option value="Blanche">Blanche</option>
+                    <option value="Bleu">Bleu</option>
+                    <option value="Noire">Noire</option>
+                    <option value="Rose">Rose</option>
+                    <option value="Violet">Violet</option>
+                </select></Label>  
+        
+                <label for="couleur1">Couleur de boule 2:
+                <select name="couleur1" id="2">
+                    <option value="Blanche">Blanche</option>
+                    <option value="Bleu">Bleu</option>
+                    <option value="Noire">Noire</option>
+                    <option value="Rose">Rose</option>
+                    <option value="Violet">Violet</option>
+                </select></label>
+        
+                <label for="text">Nom à mettre sur les boules</label>
+                <input type="sexe3" id="sexe3" placeholder="Entrer le nom à mettre sur la boule">   
+                </label>
+
+                <label for="text">Nombre d'article(s) à acheter:
+                <select name="sexe2" id="sexe2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="Plus">Plus</option>
+                </select>
+
+                <br><br><label for="text">Laisser nous un message s'il le faut</label>
+                <textarea type="sexe4" id="sexe4" placeholder="Saisissez votre message"></textarea>   
+                </label>
+
+        </div>
+
+        </fieldset>
+        <br>
+        <div class="button"></div>        
+            <button id="send" onclick="whatsApp_send_datas();">Envoyer</button>
+        </div>
+    
+    </div>
+  </form>  
+</body>
+<script src="main.js"></script>
+
+</html>
